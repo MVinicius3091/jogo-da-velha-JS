@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da velha - JS</title>
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+<body>
+
+  <header class="header-content">
+    <div>
+      <div>
+        <h3>Paleta de cores</h3>
+      </div>
+      <div class="box-colors">
+        <input class="box one" type="text" data-color="red,blue">
+        <input class="box two" type="text" data-color="green,white">
+        <input class="box three" type="text" data-color="white,blue">
+        <input class="box four" type="text" data-color="black,white">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="select-players">
+      <div class="s-line">
+        <div class="p-one-name">
+          <label for="p-one">Jogador 1</label>
+          <input type="text" id="p-one">
+        </div>
+        
+        <div class="p-one-icons">
+          <div>
+            <span>Escolha seu ícone</span>
+          </div>
+        </div>
+        
+        <div class="p-two-name">
+          <label for="p-two">Jogador 2</label>
+          <input type="text" id="p-two">
+        </div>
+        
+        <div class="p-two-icons">
+          <div>
+            <span>Escolha seu ícone</span>
+          </div>
+        </div>
+        
+        <div>
+          <button id="btn-confirmar">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="box-counter">
+      <div class="box-line">
+        <div class="head">
+          <h3>Placar</h3>
+        </div>
+        <div>
+          <h2 id="player-one"><span>0</span></h2>
+          <h2 id="player-two"><span>0</span></h2>
+          <h2>Empate: <span id="draw-game">0</span></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal modal-fade">
+    <div class="alert-win-or-draw">
+      <div class="a-line">
+        <div class="name-win">
+          <h2 id="p-name-win"></h2>
+        </div>
+        
+        <div>
+          <button id="btn-close-modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="line">
+      <h4>Dono da Jogada:  <span id="player"></span></h4>
+      <div class="blocks">
+        <div class="block">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="block">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="block">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button id="btn-new">Editar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
